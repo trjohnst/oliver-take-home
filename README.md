@@ -1,3 +1,32 @@
+## Oliver Space Take-Home Instructions
+
+Your mission, if you choose to accept it, is to build out a mock of a user-focused view
+(wireframes attached below). The idea is that this would mimic a view that our Operations
+team might use to better understand Oliver's users.
+
+Please spend 90 minutes completing this task to whatever extent you can finish, but don't
+go over time. Please add notes on anything else you would have done with more time
+if you don't feel like your work is complete. Feel free to use any third-party libraries
+that you find helpful.
+
+## API
+Please use the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) /users and /posts endpoints to grab User information and Post information.
+The documentation should all be there, but feel free to contact us with any questions. You can
+use the Javascript fetch API or setup something like axios to make the requests, or just mock
+out the data if you're struggling to get it from the JSONPlaceholder API.
+
+## Wireframes
+[Users View](https://docs.google.com/drawings/d/1jOYV-zriDjOK7eG-KanQOIwcS36e8O8T9nmo2lZJLDI/edit?usp=sharing)
+
+[Individual User View](https://docs.google.com/drawings/d/1ZqQmvzBSB7hq1VJmXpH8ybI3JREnp-KHkC27fWZKN-c/edit?usp=sharing)
+
+Best of luck! Feel free to email <a href="mailto:caroline@oliver.space">caroline@oliver.space</a>
+or text (203) 434 - 2075 if you have any questions while you're completing the exercise. I'm
+happy to help :)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
