@@ -51,14 +51,15 @@ function Users() {
             <tr key={index}>
               <td>{id}</td>
               <td>{email}</td>
-              <td
-                role="button"
-                onClick={() => {
-                  const userRoute = buildUserRoute(id);
-                  history.push(userRoute);
-                }}
-              >
-                View
+              <td>
+                <button
+                  onClick={() => {
+                    const userRoute = buildUserRoute(id);
+                    history.push(userRoute);
+                  }}
+                >
+                  View
+                </button>
               </td>
             </tr>
           ))}
