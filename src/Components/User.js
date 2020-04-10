@@ -64,7 +64,6 @@ function User() {
   return (
     <div>
       <h1>{user.name}</h1>
-      <h2>User info</h2>
       <UserInfo user={user} />
     </div>
   );
