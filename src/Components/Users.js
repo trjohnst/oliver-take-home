@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, {
+  useState,
+  useEffect
+} from 'react';
+import { useHistory } from "react-router-dom";
 import getUsers from '../APICalls/getUsers';
-
-const navigateToUser = (id) => {
-  console.log(`using stub function to navigate to user with id: ${id}`);
-}
+import { buildUserRoute } from '../Data/ClientRoutes';
 
 function Users() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,8 @@ function Users() {
 
     fetchUsers();
   }, []);
+
+  const history = useHistory();
 
   if (isLoading) {
     return (
@@ -49,7 +52,10 @@ function Users() {
               <td>{email}</td>
               <td
                 role="button"
-                onClick={() => navigateToUser(id)}
+                onClick={() => {
+                  const userRoute = buildUserRoute(id);
+                  history.push(userRoute);
+                }}
               >
                 View
               </td>
