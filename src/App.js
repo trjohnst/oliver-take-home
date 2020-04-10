@@ -9,8 +9,8 @@ import Home from './Components/Home';
 import Users from './Components/Users';
 import User from './Components/User';
 import {
-  userRoute,
-  usersRoute,
+  userClientRoute,
+  usersClientRoute,
 } from './Data/ClientRoutes';
 
 export default function OliverTakeHome() {
@@ -21,10 +21,10 @@ export default function OliverTakeHome() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path={usersRoute}>
+          <Route exact path={usersClientRoute}>
             <Users />
           </Route>
-          <Route exact path={userRoute}>
+          <Route exact path={userClientRoute}>
             <User />
           </Route>
         </Switch>

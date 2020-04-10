@@ -1,2 +1,2 @@
-export const usersRoute = '/users';
-export const userRoute = '/user/:userId';
+export const usersClientRoute = '/users';
+export const userClientRoute = '/user/:userId';
