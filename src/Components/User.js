@@ -4,6 +4,7 @@ import { userClientRoute } from '../Data/ClientRoutes';
 import getUser from '../APICalls/getUser';
 
 import UserInfo from './UserInfo';
+import UserPosts from './UserPosts';
 
 function User() {
   const match = useRouteMatch(userClientRoute);
@@ -65,6 +66,7 @@ function User() {
     <div>
       <h1>{user.name}</h1>
       <UserInfo user={user} />
+      <UserPosts userId={userId} />
     </div>
   );
 }
